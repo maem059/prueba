@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./punto_venta.css">
+
+    <title>Punto de ventas</title>
+</head>
+<body>
+    <div class="todo">
+        <header>
+            <img src="./images/tianguis01.jpeg" class="logo_top" alt="logo">
+                <nav class="menu-bar"></nav>
+                    <div>
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="./pv_catalogo.html">Catálogo</a></li>
+                            <li><a href="./pv_inventarios.html">Inventarios</a></li>
+                            <li><a href="./pv_ventas.html">Ventas</a></li>
+                            <li><a href="./pv_configura.html">Configurar</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="./pv_login.html" class="loginbot">Login</a>
+        </header>
+        
+        <div class="contenido">
+            <main>
+                <br><h1 class="titulos">Iniciar sesión o crear cuenta</h1>
+                <div class="formulario">
+                    <form action="./catalogo_accion.html" method="post" name="catalogo" autocomplete="on">
+                        <br>
+                        <div class="form_campo">
+                            <label for="prd_codigo">Ingresa número de celular</label>
+                            <input type="number"id="prd_codigo" name="codigo_producto" class="form_tama_campo" placeholder="Ej. 5698765432">
+                        </div>
+                        
+                        <div class="botones">
+                            <button class="devol">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+        
+        <aside>
+            <figure>
+                <div class="imagenes">
+                    <img src="./images/playeras01.png">
+                    <br><img src="./images/ropa01.jpeg">
+                    <br><img src="./images/camisas01.jpeg">
+                </div>
+            </figure>
+        </aside>
+        
+        <div class="widget w1">
+            <h3>Widget 1</h3>
+        </div>
+
+        <div class="widget w2">
+            <h3>Widget 2</h3>
+        </div>
+
+        <div class="pie_pagina">
+            <footer>
+                <br>Derechos reservados &copy; <span id="ayo_actual"></span>&nbsp; Quantum Technologies
+                
+                <a href="./quantumtech.html">
+                    <img src="./images/Quantum_logo01.jpeg" alt="Quantum Technologies" class="logo_pie">
+                </a>
+                <br>Whatsapp Quantum Technologies: 55 1234 5678
+                <br>Correo Quantum Technologies: info@quantumtech.mx
+                <script>
+                    // Obtiene el año actual y lo inserta en el elemento con id "year"
+                    document.getElementById('ayo_actual').textContent = new Date().getFullYear();
+                </script>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

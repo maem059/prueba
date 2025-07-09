@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./punto_venta.css">
+
+    <title>Punto de ventas</title>
+</head>
+<body>
+    <div class="todo">
+        <header>
+            <img src="./images/tianguis01.jpeg" class="logo_top" alt="logo">
+                <nav class="menu-bar"></nav>
+                    <div>
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="./pv_catalogo.html">Catálogo</a></li>
+                            <li><a href="./pv_inventarios.html">Inventarios</a></li>
+                            <li><a href="./pv_ventas.html">Ventas</a></li>
+                            <li><a href="./pv_configura.html">Configurar</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="./pv_login.html" class="loginbot">Login</a>
+        </header>
+        
+        <div class="contenido">
+            <main>
+                <br><h1 class="titulos">Local Business</h1>
+                
+                <br>
+                <div class="renglon">
+                    <a href="./pv_catalogo.html">
+                        <img src="./images/catalogo_01.png" title="Catalogo de productos">
+                    </a>
+                
+                    <a href="./pv_inventarios.html">
+                        <img src="./images/inventario_01.png" title="Inventarios">
+                    </a>
+                </div>
+
+                <br>
+                <div class="renglon">
+                    <a href="./pv_ventas.html">
+                        <img src="./images/ventas_01.png" title="Ventas">
+                    </a>
+                    
+                    <a href="./pv_configura.html">
+                        <img src="./images/configuracion01.png" title="Configuración">
+                    </a>
+                </div>
+            </main>
+        </div>
+        
+        <aside>
+            <section>
+                    <article>
+                        <br><h2 class="subtitulos">El mercado</h2>
+                        <br><p class="parrafos">El Mercado San Lorenzo Tezonco es un mercado de barrio sorprendentemente enorme para el pueblo de San Lorenzo Tezonco en Iztapalapa. Técnicamente se encuentra en el barrio de Guadalupe, pero no está lejos del centro de la ciudad (a veces llamado San Nicolás Tolentino). Ese nombre se reserva hoy en día sobre todo para la cercana hacienda abandonada que es un gran atractivo para la ciudad (aunque está en ruinas).</p>
+                        <br><p class="parrafos">Si estás en el barrio, no hay mejor lugar para comer. Como la mayoría de los mercados públicos, éste se encuentra rodeado por un par de calles comerciales. Casi escondido entre los numerosos vendedores ambulantes de la calle Candelabro, merece la pena buscar el mercado. En el interior, hay decenas de vendedores de todo lo que puedas imaginar.</p>
+                    </article>
+                </section>
+        </aside>
+
+        <div class="pie_pagina">
+            <footer>
+                <br>Derechos reservados &copy; <span id="ayo_actual"></span>&nbsp;Quantum Technologies
+                
+                <a href="./quantumtech.html">
+                    <img src="./images/Quantum_logo01.jpeg" alt="Quantum Technologies" class="logo_pie">
+                </a>
+                <br>Whatsapp Quantum Technologies: 55 1234 5678
+                <br>Correo Quantum Technologies: info@quantumtech.mx
+                <script>
+                    // Obtiene el año actual y lo inserta en el elemento con id "year"
+                    document.getElementById('ayo_actual').textContent = new Date().getFullYear();
+                </script>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

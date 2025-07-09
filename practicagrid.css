@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #023e8a;
+    background: #00000044;
+}
+
+
+
+.reticula {
+    width: 95%;
+    max-width: 95%;
+    margin: 15px auto; /* 2 valores: 1o: arriba y abajo; 
+                        2o: costados (izq y der) */
+
+    display: grid;
+
+    grid-gap: 20px;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: repeat(4, auto);
+
+    /* se definen las areas que conformaran el grid 
+    (nombres de "areas" independientes los nombres de clases */
+
+    grid-template-areas: "encab encab encab "
+                        "contenido contenido lateral"
+                        "widget1 widget2 lateral"
+                        "pie pie pie";                     
+}
+
+/*
+.grid div,
+.grid header,
+.grid aside,
+.grid footer {
+    background: #fff;
+    border-radius: 20px;
+}
+*/
+
+.logo_top,
+.logo_pie {
+    width: 70px;
+    height: 60px;
+    align-items: start;
+}
+
+/*
+.reticula .encabezado {
+*/
+
+.encabezado {
+    grid-area: encab;
+    position: sticky;
+    top: 10px;
+    width: 95%;
+    background: #383f4d;
+    color: #fff;
+    border-radius: 20px;
+
+    /*
+    grid-column: 1/-1; /* acomoda el elemento desde la columna
+                        1 (contando de Izq. a Der.) hasta 
+                        la columna -1 (contando de Der. a Izq.)
+                        De esta forma, si agregamos otra columna al
+                        grid, no afecta la distribución de este elemento,
+                        que, nuevamente, iria desde 1 hasta -1 */
+    height: 4rem;
+    display: flex;
+    justify-content: space-between; /* centra horizontalmente */
+
+    align-items: center; /* centra verticalmente */
+}
+
+.menu-bar {
+    background-color: #ffffff66;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    /* flex-flow: row; 
+    
+    /*
+    overflow: hidden;
+    
+    margin: 5px;
+    
+    border-radius: 20px;
+    */
+
+}
+
+.contenido {
+    grid-area: contenido; /* lo aomoda en el area "conenido" 
+                            (definido en grid-template-areas) */
+
+}   
+
+.barra_lateral {
+    grid-area: lateral;
+    background: #af5fdd;
+    color: #fff;
+     /* lo acomoda en el area "aside" 
+                        (definido en grid-template-areas) */
+/*
+    display: flex;
+    justify-content: center; /* centra horizaontalmente */
+/*
+    align-items: center; /* centra verticalmente */
+
+}
+
+.widget {
+    background: #5f90f1;
+    color: #fff;
+    /* width: 300px; */
+/*
+    height: 6rem;
+    display: flex;
+    justify-content: center; /* centra horizaontalmente */
+/*
+    align-items: center; /* centra verticalmente */
+
+}
+
+.w1 {
+    grid-area: widget1; /* lo acomoda en el area widget1 
+                        (definido en grid-template-areas) */
+
+}
+
+.w2 {
+    grid-area: widget2; /* lo acomoda en el area widget2 
+                        (definido en grid-template-areas) */
+
+}
+
+
+.pie_pag {
+    grid-area: pie;
+    background: #3a3f4d;
+    color: #fff;
+    
+    height: 3rem;
+    display: flex;
+    justify-content: end; /* centra horizaontalmente */
+/*
+    align-items: center; /* centra verticalmente */
+
+}
+
+/* ********************************************************************** */
+/*
+.todo {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.encab {
+    position: sticky;
+    top: 10px;
+    width: 95%;
+    
+    height: min-content;
+    background-color: #000000cc;
+    
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: solid #fff;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+li {
+    display: inline;
+    padding: 0px 20px;
+    list-style: none;
+}

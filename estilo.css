@@ -1,0 +1,23 @@
+
+/*
+@media screen and (max-width: 800px) {
+    .todo {
+        background: #ff8000;
+    }
+    .contenido {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .todo {
+        width: 100%;
+    }
+    aside {
+        display: none;
+    }
+}
+*/

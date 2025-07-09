@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./punto_venta.css">
+
+    <title>Tianguis Tezonco</title>
+</head>
+<body>
+    <div class="todo">
+        <header>
+            <img src="./images/tianguis01.jpeg" class="logo_top" alt="logo">
+                <nav class="menu-bar"></nav>
+                    <div>
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="./pv_catalogo.html">Catálogo</a></li>
+                            <li><a href="./pv_inventarios.html">Inventarios</a></li>
+                            <li><a href="./pv_ventas.html">Ventas</a></li>
+                            <li><a href="./pv_configura.html">Configurar</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="./pv_login.html" class="loginbot">Login</a>
+        </header>
+        
+        <div class="animacion">
+            <main>
+                <h1 class="titulos">Procesando. . .</h1>
+                <div class="procesando">
+                    
+                </div>
+            </main>
+        </div>
+        
+        <div class="pie_pagina">
+            <footer>
+                <br>Derechos reservados &copy; <span id="ayo_actual"></span>&nbsp;Quantum Technologies
+                
+                <a href="./quantumtech.html">
+                    <img src="./images/Quantum_logo01.jpeg" alt="Quantum Technologies" class="logo_pie">
+                </a>
+                <br>Whatsapp Quantum Technologies: 55 1234 5678
+                <br>Correo Quantum Technologies: info@quantumtech.mx
+                <script>
+                    // Obtiene el año actual y lo inserta en el elemento con id "year"
+                    document.getElementById('ayo_actual').textContent = new Date().getFullYear();
+                </script>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
